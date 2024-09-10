@@ -1,7 +1,7 @@
 create database school1;
 use school1;
 
--- Ahmed Ali
+-- Manas Goswami 
 create table medical_clinic(
 visit_id int primary key,
 person_id char(10) not null,
