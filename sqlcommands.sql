@@ -40,7 +40,6 @@ student_id char(10) ,
 teacher_id  char(10)
 ,PRIMARY KEY(student_id,teacher_id));
 
--- Obada yahia
 create table person(
 person_id char(10) primary key,
 first_name varchar(20) not null,
@@ -55,7 +54,7 @@ employee_id char(10) primary key,
 salary decimal(6,2) check (salary>582),
 certificate varchar(25),
 experiance_years integer );
--- comment
+
 create table teacher(
 teacher_id char(10) primary key,
 major varchar(20) not null,
@@ -72,7 +71,6 @@ parent_phone char(10),
 section_id char(5) not null,
 class_level char(5) not null);
 
--- omar hantouli
 
 create table teach(
 teacher_id char(10),
@@ -92,7 +90,6 @@ edition varchar(20) not null,
 author varchar(20) not null,
 is_borrowed bool not null);
 
--- moahmmed zyoud 
 
 create table course(
 course_id char(5),
@@ -179,7 +176,6 @@ alter table  grades add(constraint
 grades_course  foreign key (course_id) references course(course_id)
 );
 
--- omar constraints
  
 alter table teach add (constraint 
 teach_teacher foreign key (teacher_id) references teacher(teacher_id),
